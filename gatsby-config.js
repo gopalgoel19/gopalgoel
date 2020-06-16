@@ -3,7 +3,7 @@ module.exports = {
     title: `gop.al`,
     author: {
       name: `Gopal Goel`,
-      summary: `who is building the web.`,
+      summary: `works at Microsoft and is building the web.`,
     },
     description: `a webiste to share gopal's work and thoughts.`,
     siteUrl: `https://gop.al`,
