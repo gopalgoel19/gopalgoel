@@ -1,10 +1,24 @@
 import React from "react";
-import { Link } from "gatsby";
+import { Link, useStaticQuery } from "gatsby";
 
 import { rhythm, scale } from "../utils/typography";
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`;
+
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          author {
+            name
+          }
+        }
+      }
+    }
+  `);
+  const { name } = data.site.siteMetadata.author;
+
   let header;
 
   if (location.pathname === rootPath) {
@@ -46,15 +60,18 @@ const Layout = ({ location, title, children }) => {
   return (
     <div
       style={{
+        display: "flex",
+        flexDirection: "column",
         marginLeft: `auto`,
         marginRight: `auto`,
         maxWidth: rhythm(24),
+        minHeight: "100vh",
         padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
       }}>
       <header> {header} </header> <main> {children} </main>{" "}
-      <footer>
+      <footer style={{ marginTop: "auto" }}>
         {" "}
-        ©{new Date().getFullYear()}, Built with {` `}{" "}
+        &copy;{name}, Built with {` `}{" "}
         <a href="https://www.gatsbyjs.org"> Gatsby </a>{" "}
       </footer>{" "}
     </div>
