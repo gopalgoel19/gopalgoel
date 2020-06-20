@@ -9,6 +9,8 @@ module.exports = {
     siteUrl: `https://gop.al`,
     social: {
       twitter: `gopalgoel19`,
+      github: `gopalgoel19`,
+      instagram: `gopalgoel19`,
     },
   },
   plugins: [
