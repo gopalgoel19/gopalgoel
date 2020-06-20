@@ -1,7 +1,8 @@
 // Gatsby supports TypeScript natively!
 import React from "react";
-import { PageProps, Link, graphql } from "gatsby";
+import { PageProps, graphql } from "gatsby";
 import Layout from "../components/layout";
+import { Navbar } from "../components/navbar";
 
 type Data = {
   site: {
@@ -16,11 +17,7 @@ const Index = ({ data, location }: PageProps<Data>) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <ul style={{ listStyle: "none" }}>
-        <li>
-          <Link to="/blog">Blog</Link>
-        </li>
-      </ul>
+      <Navbar />
     </Layout>
   );
 };
