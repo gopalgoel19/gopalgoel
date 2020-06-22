@@ -6,7 +6,7 @@ const About = ({ location, data }) => {
   const siteTitle = data.site.siteMetadata.title;
   return (
     <Layout location={location} title={siteTitle}>
-      About
+      <h2>About</h2>
     </Layout>
   );
 };
