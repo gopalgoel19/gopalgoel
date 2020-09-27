@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
-
+import {ThemeContext} from "../components/themeContext";
 import Bio from "../components/bio";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -12,6 +12,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   const { previous, next } = pageContext;
 
   return (
+    <ThemeContext>
     <Layout location={location} title={siteTitle}>
       <SEO
         title={post.frontmatter.title}
@@ -79,6 +80,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         </ul>{" "}
       </nav>{" "}
     </Layout>
+    </ThemeContext>
   );
 };
 

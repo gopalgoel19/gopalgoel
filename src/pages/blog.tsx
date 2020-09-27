@@ -1,11 +1,11 @@
 // Gatsby supports TypeScript natively!
 import React from "react";
 import { PageProps, Link, graphql } from "gatsby";
-
 import Bio from "../components/bio";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { rhythm } from "../utils/typography";
+import {ThemeContext} from "../components/themeContext";
 
 type Data = {
   site: {
@@ -35,7 +35,8 @@ const Blog = ({ data, location }: PageProps<Data>) => {
   const posts = data.allMarkdownRemark.edges;
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <ThemeContext>
+      <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
       <Bio />
       {posts.map(({ node }) => {
@@ -58,12 +59,13 @@ const Blog = ({ data, location }: PageProps<Data>) => {
                 dangerouslySetInnerHTML={{
                   __html: node.frontmatter.description || node.excerpt,
                 }}
-              />
+                />
             </section>
           </article>
         );
       })}
-    </Layout>
+      </Layout>
+    </ThemeContext>
   );
 };
 
