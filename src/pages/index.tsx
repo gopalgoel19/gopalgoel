@@ -4,7 +4,7 @@ import { PageProps, graphql } from "gatsby";
 import Layout from "../components/layout";
 import { Navbar } from "../components/navbar";
 import SEO from "../components/seo";
-import {ThemeContext} from "../components/themeContext";
+import { ThemeContext } from "../components/themeContext";
 
 type Data = {
   site: {

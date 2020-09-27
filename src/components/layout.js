@@ -1,12 +1,11 @@
 import React from "react";
 import { Link, useStaticQuery } from "gatsby";
-import {Context} from "./themeContext";
-
+import { Context } from "./themeContext";
 import { rhythm, scale } from "../utils/typography";
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`;
-  const {theme} = React.useContext(Context);
+  const theme = React.useContext(Context);
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -33,7 +32,7 @@ const Layout = ({ location, title, children }) => {
         <Link
           style={{
             boxShadow: `none`,
-            color: theme.primary,
+            color: theme?.secondary,
           }}
           to={`/`}>
           {title}{" "}
