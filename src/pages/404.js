@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
-import {ThemeContext} from "../components/themeContext";
+import { ThemeContext } from "../components/themeContext";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
@@ -9,11 +9,11 @@ const NotFoundPage = ({ data, location }) => {
 
   return (
     <ThemeContext>
-    <Layout location={location} title={siteTitle}>
-      <SEO title="404: Not Found" />
-      <h1> Not Found </h1>{" "}
-      <p> You just hit a route that doesn't exist... the sadness.</p>
-    </Layout>
+      <Layout location={location} title={siteTitle}>
+        <SEO title="404: Not Found" />
+        <h1> Not Found </h1>{" "}
+        <p> You just hit a route that doesn't exist... the sadness.</p>
+      </Layout>
     </ThemeContext>
   );
 };
