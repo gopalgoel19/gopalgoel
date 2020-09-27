@@ -16,6 +16,9 @@ Wordpress2016.overrideThemeStyles = () => {
     body: {
       backgroundColor: light.background,
     },
+    "img.gatsby-resp-image-image": {
+      boxShadow: `none !important`,
+    },
   };
 };
 
