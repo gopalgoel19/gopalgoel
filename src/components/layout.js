@@ -29,14 +29,13 @@ const Layout = ({ location, title, children }) => {
           marginBottom: rhythm(1.5),
           marginTop: 0,
         }}>
-        <Link
+        {/* <Link
           style={{
             boxShadow: `none`,
-            color: theme?.secondary,
+            color: `inherit`,
           }}
-          to={`/`}>
-          {title}{" "}
-        </Link>{" "}
+          to={`/`}> */}
+        {title} {/* </Link>{" "} */}
       </h1>
     );
   } else {
@@ -49,7 +48,7 @@ const Layout = ({ location, title, children }) => {
         <Link
           style={{
             boxShadow: `none`,
-            color: `inherit`,
+            // color: `inherit`,
           }}
           to={`/`}>
           {title}{" "}

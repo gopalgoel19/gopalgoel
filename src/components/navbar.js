@@ -7,7 +7,7 @@ export const Navbar = props => {
       <ListLink to="/about">About</ListLink>
       {/* <ListLink to="/blog">Blog</ListLink> */}
       <ListLink to="/projects">Projects</ListLink>
-      <ListLink to="/Links">Links</ListLink>
+      {/* <ListLink to="/Links">Links</ListLink> */}
     </ul>
   );
 };

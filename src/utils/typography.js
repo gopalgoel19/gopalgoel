@@ -1,5 +1,6 @@
 import Typography from "typography";
 import Wordpress2016 from "typography-theme-wordpress-2016";
+import { light } from "../themes/light";
 
 Wordpress2016.overrideThemeStyles = () => {
   return {
@@ -7,13 +8,13 @@ Wordpress2016.overrideThemeStyles = () => {
       boxShadow: `none`,
     },
     "*": {
-      color: "white",
+      color: light.secondary,
     },
     a: {
-      color: "yellow",
+      color: light.primary,
     },
     body: {
-      backgroundColor: "black",
+      backgroundColor: light.background,
     },
   };
 };
