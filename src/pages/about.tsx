@@ -10,7 +10,7 @@ const About = ({ location, data }) => {
     <ThemeContext>
       <Layout location={location} title={siteTitle}>
         <SEO title="about" />
-        <h2>About Me</h2>
+        <h2 style={{margin: "20px 0"}}>About Me</h2>
         <p>
           I am a Software Engineer who works at <strong>Microsoft</strong>. 
           I love the internet and I am making it a productive place by creating web applications one at a time.
