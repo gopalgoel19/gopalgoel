@@ -9,7 +9,7 @@ const About = ({ location, data }) => {
   return (
     <ThemeContext>
       <Layout location={location} title={siteTitle}>
-        <SEO title="home" />
+        <SEO title="about" />
         <h2>About Me</h2>
         <p>
           I am a Software Engineer who works at <strong>Microsoft</strong>. 
