@@ -1,6 +1,6 @@
 import Typography from "typography";
 import Wordpress2016 from "typography-theme-wordpress-2016";
-import { light } from "../themes/light";
+import { darkTheme } from "../themes/dark";
 
 Wordpress2016.overrideThemeStyles = () => {
   return {
@@ -8,14 +8,14 @@ Wordpress2016.overrideThemeStyles = () => {
       boxShadow: `none`,
     },
     "*": {
-      color: light.secondary,
+      color: darkTheme.secondary,
     },
     a: {
-      color: light.primary,
+      color: darkTheme.primary,
       fontWeight: 1000,
     },
     body: {
-      backgroundColor: light.background,
+      backgroundColor: darkTheme.background,
     },
     "img.gatsby-resp-image-image": {
       boxShadow: `none !important`,
