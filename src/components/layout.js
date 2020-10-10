@@ -1,24 +1,24 @@
 import React from "react";
-import { Link, useStaticQuery } from "gatsby";
-import { Context } from "./themeContext";
+import { Link } from "gatsby";
+// import { Context } from "./themeContext";
 import { rhythm, scale } from "../utils/typography";
 import Footer from "./footer";
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`;
-  const theme = React.useContext(Context);
-  const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          author {
-            name
-          }
-        }
-      }
-    }
-  `);
-  const { name } = data.site.siteMetadata.author;
+  // const theme = React.useContext(Context);
+  // const data = useStaticQuery(graphql`
+  //   query {
+  //     site {
+  //       siteMetadata {
+  //         author {
+  //           name
+  //         }
+  //       }
+  //     }
+  //   }
+  // `);
+  // const { name } = data.site.siteMetadata.author;
 
   let header;
 

@@ -4,8 +4,8 @@ import { Link } from "gatsby";
 export const Navbar = props => {
   return (
     <ul style={{ listStyle: "none" }}>
-      {/* <ListLink to="/about">About</ListLink> */}
-      {/* <ListLink to="/blog">Blog</ListLink> */}
+      <ListLink to="/about">About</ListLink>
+      <ListLink to="/blog">Blog</ListLink>
       {/* <ListLink to="/projects">Projects</ListLink> */}
       {/* <ListLink to="/Links">Links</ListLink> */}
     </ul>

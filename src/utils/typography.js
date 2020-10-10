@@ -12,6 +12,7 @@ Wordpress2016.overrideThemeStyles = () => {
     },
     a: {
       color: light.primary,
+      fontWeight: 1000,
     },
     body: {
       backgroundColor: light.background,
