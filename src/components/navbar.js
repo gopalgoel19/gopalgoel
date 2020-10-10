@@ -13,7 +13,11 @@ export const Navbar = props => {
 };
 
 const ListLink = props => (
-  <li style={{ display: "inline-block", marginRight: "10px" }}>
+  <li
+    style={{
+      display: "inline-block",
+      marginRight: "10px",
+    }}>
     <Link to={props.to}>{props.children}</Link>
   </li>
 );
