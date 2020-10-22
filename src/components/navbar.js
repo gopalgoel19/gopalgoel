@@ -6,8 +6,8 @@ export const Navbar = props => {
     <ul style={{ listStyle: "none", margin: 0 }}>
       <ListLink to="/about">About</ListLink>
       <ListLink to="/blog">Blog</ListLink>
-      {/* <ListLink to="/projects">Projects</ListLink> */}
-      {/* <ListLink to="/Links">Links</ListLink> */}
+      <ListLink to="/projects">Projects</ListLink>
+      <ListLink to="/wishlist">Wish List</ListLink>    
     </ul>
   );
 };
